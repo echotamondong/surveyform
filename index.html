@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">SHIBUI CLOTHING LINE SURVEY FORM</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve our business!
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>What do you think is the best piece from our recent collection?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select from these pieces:</option>
+            <option value="Tattered Hoodie">Tattered Hoodie</option>
+            <option value="Oversized Shirt V.2">Oversized Shirt V.3</option>
+            <option value="War Shorts V.2">War Shorts V.2</option>
+            <option value="War Track Pants V.2">War Track Pants V.2</option>
+            <option value="Undecisive">Undecided</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend Shibui Clothing Line to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="for-sure"
+              type="radio"
+              class="input-radio"
+              checked
+            />For sure</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="nope"
+              type="radio"
+              class="input-radio"
+            />Nope</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What do you think makes Shibui one of a kind?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="Minimalist">Minimalist Design</option>
+            <option value="Comfortability">Comfortability</option>
+            <option value="Affordability">Affordability</option>
+            <option value="Uniqueness">Uniqueness</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved in our pieces?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="Material"
+              type="checkbox"
+              class="input-checkbox"
+            />Material</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="Color Range"
+              type="checkbox"
+              class="input-checkbox"
+            />Color Range</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Price"
+              type="checkbox"
+              class="input-checkbox"
+            />Price</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Size rANGE"
+              type="checkbox"
+              class="input-checkbox"
+            />Size Range</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Style Variety"
+              type="checkbox"
+              class="input-checkbox"
+            />Style Variety</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Up to Date"
+              type="checkbox"
+              class="input-checkbox"
+            />Seasonality</label
+          >
+          
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
